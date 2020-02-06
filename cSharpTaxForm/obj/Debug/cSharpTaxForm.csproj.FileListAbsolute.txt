@@ -1,0 +1,9 @@
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\bin\Debug\cSharpTaxForm.exe.config
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\bin\Debug\cSharpTaxForm.exe
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\bin\Debug\cSharpTaxForm.pdb
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.csprojAssemblyReference.cache
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.Properties.Resources.resources
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.csproj.GenerateResource.cache
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.exe
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.pdb
+C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.Form1.resources
