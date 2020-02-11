@@ -139,7 +139,9 @@
             this.textBoxDependents.Name = "textBoxDependents";
             this.textBoxDependents.Size = new System.Drawing.Size(275, 20);
             this.textBoxDependents.TabIndex = 2;
+            this.textBoxDependents.Text = "0";
             this.textBoxDependents.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxDependents.Leave += new System.EventHandler(this.textBoxDependents_Leave);
             // 
             // textBoxGrossPay
             // 
@@ -147,7 +149,9 @@
             this.textBoxGrossPay.Name = "textBoxGrossPay";
             this.textBoxGrossPay.Size = new System.Drawing.Size(276, 20);
             this.textBoxGrossPay.TabIndex = 1;
+            this.textBoxGrossPay.Text = "0.00";
             this.textBoxGrossPay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxGrossPay.Leave += new System.EventHandler(this.textBoxGrossPay_Leave);
             // 
             // labelGross
             // 
@@ -229,6 +233,7 @@
             this.textBoxResultNet.ReadOnly = true;
             this.textBoxResultNet.Size = new System.Drawing.Size(276, 20);
             this.textBoxResultNet.TabIndex = 9;
+            this.textBoxResultNet.Text = "0.00";
             this.textBoxResultNet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxResultMedicare
@@ -238,6 +243,7 @@
             this.textBoxResultMedicare.ReadOnly = true;
             this.textBoxResultMedicare.Size = new System.Drawing.Size(276, 20);
             this.textBoxResultMedicare.TabIndex = 8;
+            this.textBoxResultMedicare.Text = "0.00";
             this.textBoxResultMedicare.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxSocial
@@ -247,6 +253,7 @@
             this.textBoxSocial.ReadOnly = true;
             this.textBoxSocial.Size = new System.Drawing.Size(276, 20);
             this.textBoxSocial.TabIndex = 7;
+            this.textBoxSocial.Text = "0.00";
             this.textBoxSocial.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxResultFederal
@@ -256,6 +263,7 @@
             this.textBoxResultFederal.ReadOnly = true;
             this.textBoxResultFederal.Size = new System.Drawing.Size(276, 20);
             this.textBoxResultFederal.TabIndex = 6;
+            this.textBoxResultFederal.Text = "0.00";
             this.textBoxResultFederal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBoxResultGross
@@ -265,6 +273,7 @@
             this.textBoxResultGross.ReadOnly = true;
             this.textBoxResultGross.Size = new System.Drawing.Size(276, 20);
             this.textBoxResultGross.TabIndex = 5;
+            this.textBoxResultGross.Text = "0.00";
             this.textBoxResultGross.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // buttonExit
@@ -287,6 +296,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Tax Program";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

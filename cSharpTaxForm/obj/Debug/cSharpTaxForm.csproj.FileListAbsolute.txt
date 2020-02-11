@@ -7,3 +7,13 @@ C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTax
 C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.exe
 C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.pdb
 C:\Users\0712079\source\repos\cSharpTaxProgram\cSharpTaxForm\obj\Debug\cSharpTaxForm.Form1.resources
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\bin\Debug\cSharpTaxForm.exe.config
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\bin\Debug\cSharpTaxForm.exe
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\bin\Debug\cSharpTaxForm.pdb
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\obj\Debug\cSharpTaxForm.csprojAssemblyReference.cache
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\obj\Debug\cSharpTaxForm.Form1.resources
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\obj\Debug\cSharpTaxForm.Properties.Resources.resources
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\obj\Debug\cSharpTaxForm.csproj.GenerateResource.cache
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\obj\Debug\cSharpTaxForm.csproj.CoreCompileInputs.cache
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\obj\Debug\cSharpTaxForm.exe
+C:\Users\wrighta888\source\repos\cSharpTaxForm\cSharpTaxForm\obj\Debug\cSharpTaxForm.pdb

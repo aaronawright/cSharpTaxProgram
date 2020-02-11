@@ -17,8 +17,17 @@ namespace cSharpTaxForm
         public Form1()
         {
             InitializeComponent();
+            // default values
+
+
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // default values
+            comboBoxMaritalStatus.SelectedIndex = 0;
+            comboBoxPayPeriod.SelectedIndex = 0;
+        }
 
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -45,21 +54,21 @@ namespace cSharpTaxForm
             double[] resultData;
 
             /* clear errors */
-            foreach(Label lbl in fieldLabels)
+            foreach (Label lbl in fieldLabels)
             {
                 lbl.clearError();
             }
 
             /* gather input */
             name = ""; // not used in this version?       
-            if(double.TryParse(textBoxGrossPay.Text, out grossPay) == false) // try to parse gross pay
+            if (double.TryParse(textBoxGrossPay.Text, out grossPay) == false) // try to parse gross pay
             {
                 success = labelGross.showError(ref errorFields);
-            }          
-            if(int.TryParse(textBoxDependents.Text, out dependents) == false) // try to parse dependents
+            }
+            if (int.TryParse(textBoxDependents.Text, out dependents) == false) // try to parse dependents
             {
                 success = labelDependents.showError(ref errorFields);
-            } 
+            }
             else // check if max dependents has been reached
             {
                 dependents = dependents > 10 ? 10 : dependents;
@@ -67,7 +76,7 @@ namespace cSharpTaxForm
             if (Enum.TryParse(comboBoxMaritalStatus.Text, true /* ignore case */, out maritalStatus) == false) // try to parse marital status
             {
                 success = labelMaritalStatus.showError(ref errorFields);
-            }            
+            }
             if (Enum.TryParse(comboBoxPayPeriod.Text, true /* ignore case */, out payPeriod) == false)// try to parse pay period
             {
                 success = labelPayPeriod.showError(ref errorFields);
@@ -94,9 +103,18 @@ namespace cSharpTaxForm
                 // Debug.WriteLine(string.Join(",", errorFields.ToArray()));
                 // show some error messages
             }
-   
-          
+
+
+        }
+
+        private void textBoxGrossPay_Leave(object sender, EventArgs e)
+        {
+            // make sure data is numeric
+        }
+
+        private void textBoxDependents_Leave(object sender, EventArgs e)
+        {
+            // make sure data is numeric
         }
     }
-
 }
