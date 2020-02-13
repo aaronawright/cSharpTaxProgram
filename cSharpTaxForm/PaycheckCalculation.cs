@@ -35,6 +35,7 @@ namespace cSharpTaxForm
         private double netPay;
 
         // constants used for calculations
+        private const int maxDependents = 10;
         private const double withholdingMultiplierBiweekly = 155.80;
         private const double withholdingMultiplierMonthly = 337.50;
         private const double socialSecurityMultiplier = 0.062;
@@ -126,6 +127,11 @@ namespace cSharpTaxForm
                 else
                     return bracketMonthlyMarried;
             }
+        }
+
+        public static int getMaxDependents() // return max dependents
+        {
+            return maxDependents;
         }
 
         public double[] getResults() // return an array of these doubles.. rather than five different functions

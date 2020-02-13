@@ -38,6 +38,7 @@ namespace cSharpTaxForm
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
             /* error handling */
+            /* After adding input correction, this error handling never really gets used */
             bool success = true; // whether there were any errors
             List<string> errorFields = new List<string>(); // list of fields which have an error
             List<Label> fieldLabels = new List<Label> { labelGross, labelDependents, labelMaritalStatus, labelPayPeriod }; // input labels
@@ -100,8 +101,7 @@ namespace cSharpTaxForm
             }
             else // there was some issue with an input
             {
-                // Debug.WriteLine(string.Join(",", errorFields.ToArray()));
-                // show some error messages
+                // this scenario never errors
             }
 
 
@@ -109,12 +109,26 @@ namespace cSharpTaxForm
 
         private void textBoxGrossPay_Leave(object sender, EventArgs e)
         {
+            double parseResult = 0.0;
             // make sure data is numeric
+            if (double.TryParse(textBoxGrossPay.Text, out parseResult) == false){ // if can't parse
+                parseResult = 0.0; // reset to zero
+            }
+            textBoxGrossPay.Text = parseResult.ToString("0.00"); // format correctly
         }
 
         private void textBoxDependents_Leave(object sender, EventArgs e)
         {
             // make sure data is numeric
+            int parseResult = 0;
+            int maxDependents = PaycheckCalculation.getMaxDependents();
+            // make sure data is numeric
+            if (int.TryParse(textBoxDependents.Text, out parseResult) == false)
+            { // if can't parse
+                parseResult = 0; // reset to zero
+            }
+            parseResult = parseResult > maxDependents ? maxDependents : parseResult; // don't surpass max dependents
+            textBoxDependents.Text = parseResult.ToString("0"); // format correctly
         }
     }
 }

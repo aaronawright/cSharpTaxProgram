@@ -7,6 +7,14 @@ using System.Windows.Forms;
 
 namespace cSharpTaxForm
 {
+    /*
+    Note:
+    Originally I did not have the application automatically correct invalid input and so these errors
+    messages would get displayed.
+
+    After adding the input correction handling these error handling functions never really get
+    used, but I am leaving them in the code.
+    */
     public static class labelExtensions // add extra funcions to labels
     {
         public static void clearError(this Label lbl) // clear formatting
